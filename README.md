@@ -99,7 +99,7 @@ text_coords <- function(r, n_axis = ncol(p_data) - 1){
   tibble(x, y, r = r - central_distance)
 }
 
-#Coordinates for the axis labels
+# Coordinates for the axis labels
 labels_data <- map_df(seq(0, 1, 0.25) + central_distance, text_coords) %>%
   bind_cols(text_data %>% select(-r)) %>%
   group_by(parameter) %>%
