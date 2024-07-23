@@ -4,7 +4,7 @@
 <img src="https://github.com/user-attachments/assets/a1a4a976-225d-4852-9315-797ae3d44fea">
 </p>
 
-Inspired by ggplot2, the plotnine library is also based on the concept of grammar of graphics, allowing for creation of graphs by stacking multiple layers on top of one another. This powerful concept lets us create essentially any visualization, as long as we know how to code it. I’ll be using it to construct an advanced version of a spider chart from scratch. The chart will present a comparison of some car properties from the `mtcars` dataset.
+Inspired by ggplot2, the plotnine library is also based on the concept of grammar of graphics, allowing for creation of graphs by stacking multiple layers on top of one another. This powerful concept lets us create essentially any visualization, as long as we know how to code it. I’ll be using it to construct an advanced version of a spider chart from scratch. The chart will present a comparison of Titanic passenger across the three passenger classes.
 
 I'll be using R for data preparation and then plotnine for the plotting (the actual code is run within a Quarto notebook which is available in teh repository).
 
