@@ -6,7 +6,7 @@
 
 Inspired by ggplot2, the plotnine library is also based on the concept of grammar of graphics, allowing for creation of graphs by stacking multiple layers on top of one another. This powerful concept lets us create essentially any visualization, as long as we know how to code it. I’ll be using it to construct an advanced version of a spider chart from scratch. The chart will present a comparison of some car properties from the `mtcars` dataset.
 
-I'll be using R for data preparation and then plotnine for the plotting.
+I'll be using R for data preparation and then plotnine for the plotting (the actual code is run within a Quarto notebook which is available in teh repository).
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3cdbfa30-3b83-4d2e-8bd4-5538ffa1737f">
@@ -251,6 +251,7 @@ plot = (ggplot(r.circle_df, aes('x', 'y')) +
 
 Ta-daa, our work here is done. Let’s just take a moment more to comment on the numbers displayed. The 1st class passengers were the oldest and the wealthiest of the three. The 3rd class passengers had the highest number of both male and female passengers and were the youngest group — probably mostly young people and families in search for better life abroad. However, the 1st class passengers had the highest survival rate, and the 3rd the lowest. This is probably partly due to the 1st class quarters being closer to the boat deck and partly due to the higher proportion of women in that class (since woman and children were rescued first).
 
+P.S. The code necessary to produce the above plots is also available in the spider_titanic.qmd Quarto notebook in the repository.
 
 ## Bonus: mtcars plot
 
@@ -258,4 +259,5 @@ Ta-daa, our work here is done. Let’s just take a moment more to comment on the
 <img src="https://github.com/user-attachments/assets/ea56447a-ba73-4fbd-aeb5-52a45f91fdc1">
 </p>
 
+For the mtcars version, please consult the spider_mtcars.qmd notebook in the repository.
 
