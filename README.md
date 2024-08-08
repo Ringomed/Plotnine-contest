@@ -204,7 +204,7 @@ The only thing left is to add the textual labels and names of the axes.
 step_4 = (step_3 +
 geom_text(data=r.labels_data, mapping=aes(x='x', y='y', label='value'), alpha=0.65, size=8, 
          color='#303030') +
-        geom_text(data=text_coords(1 + central_distance + 0.25, p_data.shape[1] - 1),
+        geom_text(data=r.text_coords(1 + central_distance + 0.25, p_data.shape[1] - 1),
          mapping=aes(x='x', y='y'), 
          label=[param for param in p_data.columns[1:]],
          size=9)
