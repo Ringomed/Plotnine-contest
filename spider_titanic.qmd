@@ -75,6 +75,9 @@ circle_coords <- function(r, n_axis = ncol(p_data) - 1){
   tibble(x, y, r)
 }
 
+central_distance <- 0.2
+axis_name_offset <- 0.2
+
 circle_df <- map_df(seq(0, 1, 0.25) + central_distance, circle_coords)
 
 # Calculate the coordinates for the axis lines
@@ -174,7 +177,7 @@ plot = (ggplot(r.circle_df, aes('x', 'y')) +
         geom_polygon(data=r.rescaled_data, mapping=aes('x', 'y', group = 'group', color = 'group', fill = 'group'), size = 1, alpha = 0.05, show_legend = False) +
         geom_text(data=r.labels_data, mapping=aes(x='x', y='y', label='value'), alpha=0.65, size=9, 
          color='#303030') +
-        geom_text(data=text_coords(1 + central_distance + 0.15, p_data.shape[1] - 1),
+        geom_text(data=r.text_coords(1 + central_distance + 0.15, p_data.shape[1] - 1),
          mapping=aes(x='x', y='y'), 
          label=[param for param in p_data.columns[1:]],
          size=9) +
